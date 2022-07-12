@@ -1,0 +1,61 @@
+#container{
+    background-color: #a7f3d0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+#dash{
+    background-color: #047857;
+    grid-area: 1/1/4/2;
+}
+
+#header{
+    background-color: #ecfdf5;
+    grid-area: 1/2/1/4;
+}
+
+#projects{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-area: 2/2/4/3;
+
+}
+
+#projects #cardheader{
+    grid-row-start: 1;
+}
+
+#projects #cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-row-start: 2;
+}
+
+#projects .card{
+    background-color: #ecfdf5;
+    margin: 20px;
+}
+
+#announcements{
+    grid-area: 2/3;
+}
+
+#announcements #posts{
+    background-color: #ecfdf5;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3px;
+}
+
+#announcements #posts .post:not(:first-child){
+    border-top-style: solid;
+    border-top-color: slategrey;
+    border-top-width: 1px;
+}
+
+#trending{
+    grid-area: 3/3;
+}
+
