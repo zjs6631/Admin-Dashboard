@@ -92,7 +92,7 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-area: 1/3;
+    grid-area: 1/1/2/3;
 }
 
 #searchh{
@@ -100,11 +100,35 @@ body{
 }
 
 #header #curruser{
-    grid-area: 2/1;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap:20px;
+    grid-area: 2/1/3/2;
+}
+
+#curruser #heycurr{
+    text-align: left;
+}
+
+#curruser #heycurr p{
+    font-weight:600;
+    
+}
+
+#curruser #profilepic{
+    
+    justify-self: right;
+}
+
+#header #curruser #currUserImage{
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+    margin: 0px;
 }
 
 #header #filter{
-    grid-area: 2/2;
+    grid-area: 2/2/3/3;
 }
 
 #projects{
