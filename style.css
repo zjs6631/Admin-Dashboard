@@ -236,10 +236,53 @@ body{
 }
 
 #projects .card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 5fr 1fr;
     background-color: #ecfdf5;
     margin: 20px;
     border-radius: 10px;
     border-left: 10px solid #047857;
+    
+}
+
+.card .cardtext{
+    margin: 10px;
+    grid-area: 1 1;
+}
+
+.card .cardtext .cardHeader{
+    font-weight: 600;
+}
+
+.cardicons{
+    grid-area: 1 2 2 3;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.icon1{
+    display:grid;
+    grid-column-start: 8;
+    margin: 10px;
+     
+}
+
+.cardicons .icon2{
+    display: grid;
+    grid-column-start: 9;
+    margin: 10px;
+}
+
+.cardicons .icon3{
+    display: grid;
+    grid-column-start: 10;
+    margin: 10px;
+}
+.card .cardicons img{
+    width: 25px;
+    align-self: end;
+    justify-self: end;
     
 }
 
